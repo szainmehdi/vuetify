@@ -47,6 +47,8 @@
         `@/data/pages/${namespace}/${page}`
       )
 
+      console.log(JSON.stringify(res.default, 2, 2))
+
       setStructure(res.default)
     } catch (err) {
       setStructure(false)
